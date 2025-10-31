@@ -13,7 +13,7 @@
 
 .projects_list li a {
   text-decoration: underline;
-  transition: color 0.2s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: color 0.2s ease;
 }
 .projects_list li a:hover {
   color: rgb(172, 171, 171);
@@ -80,7 +80,7 @@
 }
 
 .connect_ul li a {
-  transition: color 0.2s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: color 0.2s ease;
 }
 
 .connect_ul li a:hover {

@@ -1,0 +1,11 @@
+---
+const { name, desc, date, time, link } = Astro.props;
+import "../styles/CardStyles.css";
+---
+
+<a href={link} class="card">
+
+    <h3 class="card_heading">{name}</h2>
+    <p class="card_desc">{desc}</p>
+    <p class="card_date">{date} · {time}</p>
+</a>

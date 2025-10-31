@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../Components/Card.astro";
+import "../styles/BlogStyles.css";
+const allPosts = await Astro.glob("./posts/*.md");
+---
+
+<BaseLayout title="Blogs | Ahnet">
+
+    <div class="main">
+  <div class="heading">
+    <a href="/">Home</a>
+    <h1>Posts</h1>
+  </div>
+
+  {
+    allPosts.map((post) => {
+      return (
+        <Card
+          name={post.frontmatter.name}
+          link={post.url}
+          desc={post.frontmatter.desc}
+          date={post.frontmatter.date}
+          time={post.frontmatter.time}
+        />
+      );
+    })
+  }
+  </div>
+</BaseLayout>
