@@ -104,6 +104,8 @@ body {
 
 main {
   flex: 1;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 footer {
@@ -124,3 +126,4 @@ footer a {
 footer a:hover {
   color: rgb(172, 171, 171);
 }
+
