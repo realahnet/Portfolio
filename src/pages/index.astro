@@ -1,31 +1,45 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/IndexStyles.css";
-
 ---
 
 <BaseLayout>
+  <img
+    class="main_img"
+    src="https://avatars.githubusercontent.com/u/57623523"
+    height="300"
+    width="300"
+    alt="Profile Picture"
+  />
 
-	<img class="main_img" src="https://avatars.githubusercontent.com/u/57623523" height="300" width="300" alt="Profile Picture"></img>
+  <div class="main_div">
+    <h1>Kumail Hanafi</h1>
+    <p>I exist 🥲</p>
 
-	<div class="main_div">
-		<h1>Kumail Hanafi</h1>
-		<p>I exist 🥲</p>
+    <div class="profiles_imgs">
+      <a href="https://www.linkedin.com/in/kumail-hanafi/" target="_blank">
+        <img
+          src="/linkedin_icon.svg"
+          class="linkedin_img"
+          height="30"
+          width="30"
+          alt="LinkedIn Icon"
+        />
+      </a>
+      <span></span>
+      <a href="https://github.com/realahnet" target="_blank">
+        <img
+          src="/connect_icons/github_icon.svg"
+          class="git_img"
+          height="40"
+          width="40"
+          alt="GitHub Icon"
+        />
+      </a>
+    </div>
 
-		<div class="profiles_imgs">
-			<a href="https://www.linkedin.com/in/kumail-hanafi/" target="_blank">
-			<img src="/linkedin_icon.svg" class="linkedin_img" height="30" width="30" alt="LinkedIn Icon"/>
-			</a>
-			<span></span>
-			<a href="https://github.com/realahnet" target="_blank">
-			<img src="/connect_icons/github_icon.svg" class="git_img" height="40" width="40" alt="GitHub Icon"/>
-			</a>
-		</div>
-
-		<a href="/about">
-			<button class="about_button">My Profile</button>
-		</a>
-	</div>
-
-
+    <a href="/about">
+      <button class="about_button">My Profile</button>
+    </a>
+  </div>
 </BaseLayout>

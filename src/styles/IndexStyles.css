@@ -15,36 +15,42 @@
 }
 
 .main_div p {
-    font-size: 20px;
-    padding-top: 5px;
-    color: rgb(194, 194, 194);
+  font-size: 20px;
+  padding-top: 5px;
+  color: rgb(194, 194, 194);
 }
 
 .profiles_imgs {
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .git_img {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .profiles_imgs span {
-    width: 2px;
-    margin-left: 25px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.3);
+  width: 2px;
+  margin-left: 25px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .about_button {
-    background-color: rgb(92, 92, 92);
-    border-radius: 8px;
-    margin-top: 25px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: Poppins Regular;
-    color: white;
+  background-color: rgb(92, 92, 92);
+  border-radius: 8px;
+  margin-top: 25px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Poppins Regular;
+  color: white;
+  transition: background-color 0.2s ease,
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.about_button:hover {
+  background-color: rgb(70, 70, 70);
 }

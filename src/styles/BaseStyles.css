@@ -37,11 +37,22 @@ nav {
   width: 100%;
 }
 
+.nav_ul_div a {
+  color: white;
+  transition: color 0.2s ease;
+}
+
 .nav_name {
   color: white;
   text-decoration: none;
   font-size: 25px;
   font-family: Poppins ExtraBold;
+  transition: color 0.2s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nav_name:hover {
+  color: rgb(163, 163, 163);
+  transform: scale(1.05);
 }
 
 .nav_ul {
@@ -56,10 +67,11 @@ nav {
   color: white;
   font-family: Poppins Regular;
   font-size: 17px;
+  transition: color 0.5s ease;
 }
 
 .nav_ul a:hover {
-    color: rgb(172, 171, 171);
+  color: rgb(172, 171, 171);
 }
 
 .nav_ul_div {
@@ -68,18 +80,23 @@ nav {
 }
 
 .nav_ul_div img {
-  color: white;
   transform: scaleX(-1);
 }
 
+.nav_ul_div a:hover {
+  color: rgb(163, 163, 163);
+  transform: scale(1.05);
+}
+
 .nav_ul_div span {
-    width: 1px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.3);
+  width: 1px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Handle footer at bottom */
-html, body {
+html,
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -100,9 +117,10 @@ footer {
 }
 
 footer a {
-    color: white;
+  color: white;
+  transition: color 0.2s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 footer a:hover {
-      color: rgb(172, 171, 171);
+  color: rgb(172, 171, 171);
 }
