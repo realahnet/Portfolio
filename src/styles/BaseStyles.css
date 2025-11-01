@@ -55,6 +55,7 @@ nav {
   transform: scale(1.05);
 }
 
+
 .nav_ul {
   display: flex;
   justify-content: center;
@@ -79,9 +80,10 @@ nav {
   gap: 5mm;
 }
 
-.nav_ul_div img {
+/* Use in future when search functionality is added */
+/* .nav_ul_div img {
   transform: scaleX(-1);
-}
+} */
 
 .nav_ul_div a:hover {
   color: rgb(163, 163, 163);
