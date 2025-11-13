@@ -6,7 +6,11 @@ const postFiles = import.meta.glob("./posts/*.md", { eager: true }) as Record<
   string,
   any
 >;
-const allPosts = Object.values(postFiles);
+const allPosts = Object.values(postFiles).sort((a, b) => {
+  const dateA = new Date(a.frontmatter.date);
+  const dateB = new Date(b.frontmatter.date);
+  return dateB.getTime() - dateA.getTime();
+});
 ---
 
 <BaseLayout title="Blogs | Ahnet">
