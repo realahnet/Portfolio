@@ -39,6 +39,8 @@ h6 {
 .markdown_body p {
   margin-top: 1em;
   margin-bottom: 1em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .markdown_body ul {
