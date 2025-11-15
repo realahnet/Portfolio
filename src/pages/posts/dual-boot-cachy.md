@@ -3,6 +3,7 @@ layout: ../../layouts/BasePostsLayout.astro
 
 name: "Dual booting CachyOS with Windows"
 desc: "In this guide we'll see how to install CachyOS alongside Windows."
+top_desc: "Dual booting"
 date: "1 November 2025"
 time: "7 min"
 ---

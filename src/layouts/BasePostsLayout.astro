@@ -5,7 +5,7 @@ import "../styles/BasePostsStyles.css";
 const { frontmatter } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout title={frontmatter.top_desc + " | Ahnet"}>
   <div class="markdown_body">
     <div class="heading_markdown">
       <a href="/blog">Posts</a>
