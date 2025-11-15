@@ -71,6 +71,8 @@ h6 {
 }
 
 .markdown_body img {
+  display: block;
+  margin: 0 auto;
   border-radius: 1.5%;
 }
 
