@@ -1,9 +1,9 @@
 .markdown_body {
-  max-width: 700px;
   margin: 0 auto;
   padding: 20px;
   line-height: 1.7;
   font-family: Poppins Regular;
+  max-width: clamp(700px, 60vw, 1000px);
 }
 
 .heading_markdown p {
